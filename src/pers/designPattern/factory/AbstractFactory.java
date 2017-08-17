@@ -1,9 +1,5 @@
 package pers.designPattern.factory;
 
-/**
- * Created by houli on 2017/8/17.
- */
-
 abstract class Product1 {
 
 }
