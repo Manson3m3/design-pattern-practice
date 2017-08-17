@@ -4,7 +4,6 @@ import java.io.*;
 import java.util.Date;
 import java.util.HashMap;
 
-import sun.dc.pr.PRError;
 
 /**
  * 原型模式
@@ -24,7 +23,7 @@ class Product implements Cloneable,Serializable{
         this.date = date;
     }
 
-    public Date getDate() {
+    Date getDate() {
         return date;
     }
 
@@ -45,7 +44,7 @@ public abstract class Prototype {
  * 浅复制
  */
 class ShallowPrototype extends Prototype {
-    public ShallowPrototype(Product p) {
+    ShallowPrototype(Product p) {
         super(p);
     }
     private Product p = super.p;
@@ -60,7 +59,7 @@ class ShallowPrototype extends Prototype {
  * 深复制
  */
 class DeepPrototype extends Prototype{
-    public DeepPrototype(Product p) {
+    DeepPrototype(Product p) {
         super(p);
     }
     private Product p = super.p;
@@ -82,7 +81,7 @@ class DeepPrototype extends Prototype{
 }
 
 class PrototypeManager{
-    private static HashMap<String,Prototype> map = new HashMap<String, Prototype>();
+    private static HashMap<String,Prototype> map = new HashMap<>();
     private PrototypeManager(){
 
     }
@@ -92,7 +91,7 @@ class PrototypeManager{
      * @param prototypeId
      * @param prototype
      */
-    public synchronized static void setPrototype(String prototypeId,Prototype prototype) {
+    synchronized static void setPrototype(String prototypeId,Prototype prototype) {
         map.put(prototypeId,prototype);
     }
 
