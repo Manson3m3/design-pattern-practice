@@ -15,7 +15,7 @@ import java.util.Scanner;
  * 求出数列长度为i-1时非法的序列个数（记为invalid）,即有state[i][j] = sum - invalid
  */
 public class CountNum {
-    static final int mod = 1000000007;
+    private static final int mod = 1000000007;
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
