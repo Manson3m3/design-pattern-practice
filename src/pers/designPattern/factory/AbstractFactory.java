@@ -15,7 +15,7 @@ class Product1A extends Product1 {
 }
 
 class Product1B extends Product1 {
-    public Product1B() {
+    Product1B() {
         System.out.println("Create Product1B!");
     }
 }
@@ -25,13 +25,13 @@ abstract class Product2 {
 }
 
 class Product2A extends Product2 {
-    public Product2A() {
+    Product2A() {
         System.out.println("Create Product2A!");
     }
 }
 
 class Product2B extends Product2 {
-    public Product2B() {
+    Product2B() {
         System.out.println("Create Product2B!");
     }
 }
