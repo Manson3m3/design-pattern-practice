@@ -20,6 +20,8 @@ class Source{
 
 /**
  * 类适配器
+ * 当希望将一个类转换成满足另一个新接口的类时，
+ * 可以使用类的适配器模式，创建一个新类，继承原有的类，实现新的接口即可
  */
 class ClassAdapter extends Source implements Sourceable {
     @Override
@@ -30,6 +32,8 @@ class ClassAdapter extends Source implements Sourceable {
 
 /**
  * 对象适配器
+ * 当希望将一个对象转换成满足另一个新接口的对象时，
+ * 可以创建一个ObjectAdapter类，持有原类的一个实例，在ObjectAdapter类的方法中，调用实例的方法就行
  */
 class ObjectAdapter implements Sourceable {
     private Source source;
@@ -52,6 +56,8 @@ class ObjectAdapter implements Sourceable {
 
 /**
  * 接口适配器
+ * 当不希望实现一个接口中所有的方法时，可以创建一个抽象类InterfaceAdapter，
+ * 实现所有方法，我们写别的类的时候，继承抽象类即可
  */
 abstract class InterfaceAdapter implements Sourceable{
     @Override
