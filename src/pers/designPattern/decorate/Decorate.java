@@ -46,7 +46,7 @@ class ConcreteDecorator1 extends Decorator {
 }
 
 class ConcreteDecorator2 extends Decorator {
-    public ConcreteDecorator2(Sourceable sourceable) {
+    ConcreteDecorator2(Sourceable sourceable) {
         super(sourceable);
     }
 
@@ -56,7 +56,7 @@ class ConcreteDecorator2 extends Decorator {
         method2();
     }
 
-    void method2() {
+    private void method2() {
         System.out.println("ConcreteDecorator method2!");
     }
 }
