@@ -1,4 +1,4 @@
-package pers.designPattern.singleton;
+package pers.manson3m3.designPattern.singleton;
 
 
 import java.io.Serializable;

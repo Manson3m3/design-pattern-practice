@@ -1,4 +1,4 @@
-package pers.algorithm.dynamic;
+package pers.manson3m3.algorithm.dynamic;
 
 import java.util.Scanner;
 

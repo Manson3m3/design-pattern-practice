@@ -1,4 +1,4 @@
-package pers.designPattern.prototype;
+package pers.manson3m3.designPattern.prototype;
 
 import java.io.*;
 import java.util.Date;

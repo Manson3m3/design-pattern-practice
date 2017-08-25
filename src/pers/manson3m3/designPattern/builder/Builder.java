@@ -1,4 +1,4 @@
-package pers.designPattern.builder;
+package pers.manson3m3.designPattern.builder;
 
 import java.util.ArrayList;
 import java.util.List;

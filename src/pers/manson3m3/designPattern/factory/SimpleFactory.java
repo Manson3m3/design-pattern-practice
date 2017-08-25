@@ -1,4 +1,4 @@
-package pers.designPattern.factory;
+package pers.manson3m3.designPattern.factory;
 
 /**
  * 简单工厂模式，根据传入的参数不同制造不同的产品

@@ -1,4 +1,4 @@
-package pers.designPattern.factory;
+package pers.manson3m3.designPattern.factory;
 
 abstract class Product1 {
 

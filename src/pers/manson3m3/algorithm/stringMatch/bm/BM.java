@@ -1,4 +1,4 @@
-package pers.algorithm.stringMatch.bm;
+package pers.manson3m3.algorithm.stringMatch.bm;
 
 import java.util.HashMap;
 

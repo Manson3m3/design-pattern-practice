@@ -1,4 +1,4 @@
-package pers.designPattern.decorate;
+package pers.manson3m3.designPattern.decorate;
 
 /**
  * 装饰模式可以在不创造更多的子类的模式下，将对象的功能加以扩展
