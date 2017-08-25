@@ -38,7 +38,7 @@ class ClassAdapter extends Source implements Sourceable {
 class ObjectAdapter implements Sourceable {
     private Source source;
 
-    public ObjectAdapter(Source source) {
+    ObjectAdapter(Source source) {
         super();
         this.source = source;
     }
