@@ -61,10 +61,14 @@ class ObjectAdapter implements Sourceable {
  */
 abstract class InterfaceAdapter implements Sourceable{
     @Override
-    public void method1() {}
+    public void method1() {
+        System.out.println("abstract method1!");
+    }
 
     @Override
-    public void method2() {}
+    public void method2() {
+        System.out.println("abstract method2!");
+    }
 }
 
 class SourceMethod1 extends InterfaceAdapter {
