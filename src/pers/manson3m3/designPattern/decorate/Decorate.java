@@ -15,7 +15,7 @@ class Source implements Sourceable {
     }
 }
 
-class Decorator implements Sourceable {
+abstract class Decorator implements Sourceable {
     private Sourceable sourceable;
 
     Decorator(Sourceable sourceable) {
