@@ -1,4 +1,4 @@
-package pers.manson3m3.dataStruct.tree.ArrayTree;
+package pers.manson3m3.dataStruct.tree;
 
 /**
  * 树是一个递归的概念，从根节点开始，每个节点至多只有一个父节点，有多个子节点，每个子节点又是一棵树，以此递归。

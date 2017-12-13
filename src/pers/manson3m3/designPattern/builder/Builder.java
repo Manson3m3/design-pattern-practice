@@ -106,7 +106,7 @@ class Director{
     }
 }
 
-class Test{
+class Test {
     public static void main(String[] args) {
         Director director = new Director();
         Product productA = director.createProduct(new BuilderA());

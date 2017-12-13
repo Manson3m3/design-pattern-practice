@@ -41,7 +41,7 @@ class ConcreteDecorator1 extends Decorator {
     }
 
      private void method1() {
-        System.out.println("ConcreteDecorator lmethod1!");
+        System.out.println("ConcreteDecorator method1!");
     }
 }
 

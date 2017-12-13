@@ -43,7 +43,7 @@ public abstract class Prototype {
 /**
  * 浅复制
  */
-class ShallowPrototype extends Prototype {
+class ShallowPrototype extends Prototype implements Cloneable {
     ShallowPrototype(Product p) {
         super(p);
     }
@@ -58,7 +58,7 @@ class ShallowPrototype extends Prototype {
 /**
  * 深复制
  */
-class DeepPrototype extends Prototype{
+class DeepPrototype extends Prototype implements Cloneable{
     DeepPrototype(Product p) {
         super(p);
     }
