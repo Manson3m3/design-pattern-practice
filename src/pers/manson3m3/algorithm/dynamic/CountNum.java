@@ -46,7 +46,6 @@ public class CountNum {
             sum = (sum + state[n][i]) % mod;
             }
         System.out.println(sum);
-
         scanner.close();
         }
 }

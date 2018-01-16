@@ -19,12 +19,12 @@ public class ArrayTree<T> {
         return data;
     }
 
-    public int getmParent() {
-        return mParent;
-    }
-
     public void setData(T data) {
         this.data = data;
+    }
+
+    public int getmParent() {
+        return mParent;
     }
 
     public void setmParent(int mParent) {
@@ -36,69 +36,15 @@ public class ArrayTree<T> {
     }
 }
 
-class Tree<E> {
-    private static final int DEFFAULT_SIZE = 10;
-    private int treeSize;
-    private int nodeNum;
-    private ArrayTree[] treeNodes;
 
-
-    @SuppressWarnings("unchecked")
-    public Tree(E data) {
-        treeSize = DEFFAULT_SIZE;
-        this.treeNodes = new ArrayTree[treeSize];
-        treeNodes[0] = new ArrayTree(data,-1);
-        nodeNum ++;
-    }
-    @SuppressWarnings("unchecked")
-    public Tree(E data,int treeSize) {
-        if (treeSize<=DEFFAULT_SIZE){
-            this.treeSize = treeSize;
-            this.treeNodes = new ArrayTree[treeSize];
-            treeNodes[0] = new ArrayTree(data,-1);
-            nodeNum++;
-        }
-        else
-            throw new RuntimeException("treeSize不能大于10！");
-    }
-
-    public void addNode(E data,int mParent) {
-        if (this.nodeNum == DEFFAULT_SIZE) {
-            throw new RuntimeException("树节点数目超过10！");
-        } else {
-            this.treeNodes[nodeNum] = new ArrayTree(data,mParent);
-            nodeNum++;
-        }
-    }
-
-    public ArrayTree getRoot() {
-        return treeNodes[0];
-    }
-
-    public void printTree() {
-        for (int i = 0; i < this.nodeNum; i++) {
-            System.out.println(this.treeNodes[i]);
-        }
-    }
-
-    public int getTreeSize() {
-        return treeSize;
-    }
-
-    public int getNodeNum() {
-        return nodeNum;
-    }
-}
-
-@SuppressWarnings("unchecked")
-class Test {
-    public static void main(String[] args) {
-        Tree tree = new Tree("root",10);
-        tree.addNode("left",0);
-        tree.addNode("right",0);
-        tree.addNode("a",1);
-        tree.addNode("b",1);
-        tree.printTree();
-
-    }
-}
+//class Test {
+//    public static void main(String[] args) {
+//        Tree tree = new Tree("root",10);
+//        tree.addNode("left",0);
+//        tree.addNode("right",0);
+//        tree.addNode("a",1);
+//        tree.addNode("b",1);
+//        tree.printTree();
+//
+//    }
+//}
